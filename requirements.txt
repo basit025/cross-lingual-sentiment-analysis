@@ -1,5 +1,5 @@
-streamlit==1.45.1
-transformers==4.51.3
-torch==2.6.0
-sentencepiece==0.2.0
-protobuf==5.29.4
+streamlit
+transformers
+torch
+sentencepiece
+protobuf
