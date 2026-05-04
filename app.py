@@ -230,8 +230,8 @@ def load_model():
         MODEL_NAME,
         num_labels=NUM_LABELS,
     )
-    state_dict = torch.load(MODEL_CACHE_PATH, map_location=torch.device("cpu"))
-    model.load_state_dict(state_dict)
+    state_dict = torch.load(MODEL_CACHE_PATH, map_location=torch.device("cpu"), weights_only=False)
+    model.load_state_dict(state_dict, strict=False)
     model.eval()
     return tokenizer, model
 
